@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Downloader (ZIP)</title>
+  <style>
+    body {
+      width: 250px;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-bottom: 10px;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    #status {
+      margin-top: 10px;
+      font-size: 12px;
+      min-height: 40px;
+    }
+    .progress-container {
+      width: 100%;
+      background-color: #f1f1f1;
+      border-radius: 4px;
+      margin-top: 10px;
+    }
+    #progressBar {
+      width: 0%;
+      height: 10px;
+      background-color: #4CAF50;
+      border-radius: 4px;
+      text-align: center;
+      line-height: 10px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <button id="downloadBtn">Download All Images as ZIP</button>
+  <div class="progress-container">
+    <div id="progressBar"></div>
+  </div>
+  <div id="status">Ready to download images</div>
+  <script src="popup.js"></script>
+</body>
+</html>
